@@ -1,0 +1,29 @@
+::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 5px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+ /*滚动条里面小方块*/
+ border-radius: 0;
+ background-image: linear-gradient(135deg, #1DE9B6 0%, rgba(8, 196, 219, 1) 72%, #057494 100%);
+ transition: all .2s;
+ border-radius: 5px;
+
+ &:hover {
+     background-color: rgba(95, 95, 95, .7);
+ }
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  border-radius: 5;
+}
+
+.el-header {
+  background-color: #9e9a9a;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+@testColor:rgb(199, 32, 32);
+
+

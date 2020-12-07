@@ -1,0 +1,81 @@
+.theme(
+  @background: #fffffd, //el-header背景色
+  @topAsideColor:#212d3b, //菜单栏顶部颜色
+  @asideColor: #304156, //菜单栏背景色
+  @menuColor: #1d2e42, //二级菜单栏背景色
+  @thirdMenuColor: #102033, //三级菜单栏背景色
+  @mainColor: rgb(235, 233, 233), //main背景色
+  @fontColor: #fff, //字体颜色
+  @activeColor:rgb(25, 240, 122), //激活字体颜色
+  @button:rgb(12, 41, 122), //按钮颜色
+  @textColor:rgb(25, 140, 248), //主内容字体颜色
+  ) {
+  .el-header {
+    background-color: @background;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .el-aside {
+    background-color: @asideColor;
+    text-align: center;
+    line-height: 200px;
+    .sys-top {
+      height: 60px !important;
+      background: @topAsideColor !important;
+    }
+    .sys-icon {
+      position: relative;
+      left: -10px;
+    }
+    .sys-title {
+      font-weight: 600;
+      color: rgb(253, 253, 253);
+      font-size: 15px;
+    }
+    .el-menu-item {
+      background-color: @asideColor;
+    }
+    .el-submenu__title {
+      background-color: @asideColor;
+    }
+    .submenu-wrap .el-menu-item {
+      background: @menuColor !important;
+      text-align: left !important;
+      padding-left: 69px !important;
+    }
+    .submenu-wrap .thirdMenu .el-menu-item {
+      background: @thirdMenuColor !important;
+      font-size: 12px;
+      text-align: left !important;
+      padding-left: 79px !important;
+    }
+    .thirdMenu-title {
+      position: relative;
+      left: -40px;
+      width: 200px;
+      height: 80px;
+      background: @menuColor !important;
+      border: 0;
+      margin: 0;
+    }
+  }
+  //主内容背景
+  .el-main {
+    background-color:@mainColor;
+    color: #333;
+    // text-align: center;
+    // line-height: 160px;
+  }
+  //按钮
+  .theme-button {
+    background-color: @button !important;
+    color: #fff;
+    border: 0;
+  }
+  //主内容高亮字体
+  .theme-active-text-color {
+    color: @textColor;
+  }
+}
