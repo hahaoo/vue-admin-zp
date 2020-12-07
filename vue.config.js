@@ -13,7 +13,7 @@ module.exports = {
     }, // 错误、警告在页面弹出
     proxy: {
       "/mock": {
-        target: "http://yapi.dtinsure.com/mock/177",
+        target: "",
         changeOrigin: true, // 允许websocket跨域
         // ws: true,
         pathRewrite: {
